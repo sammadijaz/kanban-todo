@@ -86,4 +86,5 @@ section .column {
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius-sm);
     padding: var(--padding-lg);
+    flex-grow: 1;
 }
