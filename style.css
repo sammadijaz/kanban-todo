@@ -74,8 +74,8 @@ nav button:hover {
 section {
   padding: var(--sec-padding);
   display: flex;
-  gap: var(--gap-lg);
   justify-content: space-between;
+  gap: var(--gap-lg);
   background-color: #4402fc;
   flex-grow: 1;
 }
