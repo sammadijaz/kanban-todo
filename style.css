@@ -49,8 +49,11 @@ nav button {
   border: none;
   padding: var(--padding-md) var(--padding-lg);
   cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease-in-out;
 }
 
 nav button:hover {
   background-color: var(--btn-hover-bg-color);
+  border-radius: var(--border-radius-md);
 }
