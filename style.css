@@ -79,6 +79,11 @@ section {
   gap: var(--gap-lg);
   background-color: #4402fc;
   flex-grow: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark-theme {
+  background-color: #1e1e1e;
 }
 
 section .column {
