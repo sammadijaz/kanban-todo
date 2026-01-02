@@ -86,4 +86,6 @@ section .column {
   border-radius: var(--border-radius-sm);
   padding: var(--padding-lg);
   flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
 }
