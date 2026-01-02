@@ -35,6 +35,12 @@ body {
   color: var(--font-color);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
