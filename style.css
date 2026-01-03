@@ -115,6 +115,7 @@ section .column {
   display: flex;
   flex-direction: column;
   gap: var(--gap-sm);
+  cursor: grab;
 }
 
 
@@ -132,4 +133,5 @@ section .column {
 .task button:hover {
   background-color: var(--del-btn-hover-bg-color);
   border-radius: var(--border-radius-md);
+  cursor: pointer;
 }
