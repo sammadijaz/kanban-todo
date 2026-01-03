@@ -93,6 +93,15 @@ section .column {
   padding: var(--padding-lg);
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-md);
   outline: none;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--gap-md);
 }
