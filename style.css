@@ -135,3 +135,8 @@ section .column {
   border-radius: var(--border-radius-md);
   cursor: pointer;
 }
+
+.hover-on {
+  border: 2px dashed var(--font-color) !important;
+  scale: 1.025;
+}
