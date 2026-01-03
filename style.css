@@ -3,8 +3,10 @@
   --background-color: #030303;
   --btn-bg-color: #292929;
   --btn-hover-bg-color: #333333;
+  --del-btn-hover-bg-color: #af0000;
   --border-color: #979797;
   --col-border-color: #161616;
+
 
   /* padding */
   --padding-sm: 5px;
@@ -125,4 +127,9 @@ section .column {
   cursor: pointer;
   border-radius: var(--border-radius-sm);
   transition: all 0.3s ease-in-out;
+}
+
+.task button:hover {
+  background-color: var(--del-btn-hover-bg-color);
+  border-radius: var(--border-radius-md);
 }
