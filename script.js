@@ -1,5 +1,6 @@
 const toggleThemeButton = document.querySelector(".toggleTheme");
 const section = document.querySelector("section");
+const columns = document.querySelectorAll(".column");
 
 toggleThemeButton.addEventListener("click", () => { 
     section.classList.toggle("dark-theme");
@@ -9,4 +10,16 @@ toggleThemeButton.addEventListener("click", () => {
         toggleThemeButton.textContent = "🌙";
     };
 })
+
+columns.forEach(column => {
+    column.addEventListener("dragenter", (e) => {
+        e.preventDefault();
+        column.classList.add("hover-on");
+    })
+
+    column.addEventListener("dragleave", (e) => {
+        e.preventDefault();
+        column.classList.remove("hover-on");
+    })
+});
 
