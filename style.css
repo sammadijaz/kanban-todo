@@ -104,3 +104,13 @@ section .column {
   align-items: center;
   margin-bottom: var(--gap-md);
 }
+
+.task {
+  background-color: #1e1e1e;
+  /* border: 1px solid var(--border-color); */
+  border-radius: var(--border-radius-sm);
+  padding: var(--padding-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
