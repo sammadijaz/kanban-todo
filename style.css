@@ -94,7 +94,6 @@ section .column {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   gap: var(--gap-md);
   outline: none;
 }
