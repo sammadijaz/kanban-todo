@@ -3,6 +3,7 @@ const section = document.querySelector("section");
 const columns = document.querySelectorAll(".column");
 const tasks = document.querySelectorAll(".task");
 const delBtns = document.querySelectorAll(".del-btn");
+const main = document.querySelector("main");
 let draggingTask = null;
 
 
@@ -43,4 +44,3 @@ columns.forEach(column => {
         column.classList.remove("hover-on")
     })
 });
-
