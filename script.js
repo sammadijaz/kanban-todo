@@ -38,6 +38,8 @@ columns.forEach(column => {
     column.addEventListener("drop", (e) => {
         e.preventDefault();
         console.log("dropped: ", draggingTask, column);
+        column.appendChild(draggingTask);
+        column.classList.remove("hover-on")
     })
 });
 
