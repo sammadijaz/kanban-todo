@@ -21,5 +21,14 @@ columns.forEach(column => {
         e.preventDefault();
         column.classList.remove("hover-on");
     });
+
+    column.addEventListener("dragover", (e) => {
+        e.preventDefault();
+    })
+
+    column.addEventListener("drop", (e) => {
+        e.preventDefault();
+        console.log("dropped: ", e)
+    })
 });
 
