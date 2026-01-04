@@ -15,11 +15,11 @@ columns.forEach(column => {
     column.addEventListener("dragenter", (e) => {
         e.preventDefault();
         column.classList.add("hover-on");
-    })
+    });
 
     column.addEventListener("dragleave", (e) => {
         e.preventDefault();
         column.classList.remove("hover-on");
-    })
+    });
 });
 
