@@ -4,6 +4,13 @@ const columns = document.querySelectorAll(".column");
 const tasks = document.querySelectorAll(".task");
 let draggingTask = null;
 
+
+tasks.forEach((task) => {
+    task.addEventListener("drag", () => {
+        draggingTask = task;
+    });
+});
+
 toggleThemeButton.addEventListener("click", () => { 
     section.classList.toggle("dark-theme");
     if(section.classList.contains("dark-theme")) {
@@ -30,7 +37,7 @@ columns.forEach(column => {
 
     column.addEventListener("drop", (e) => {
         e.preventDefault();
-        console.log("dropped: ", e)
+        console.log("dropped: ", draggingTask, column);
     })
 });
 
