@@ -44,3 +44,17 @@ columns.forEach(column => {
         column.classList.remove("hover-on")
     })
 });
+
+
+
+delBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+       const newDiv = document.createElement("div");
+       newDiv.classList.add("del-modal");
+       main.appendChild(newDiv);
+
+       newDiv.addEventListener("click", () => {
+        newDiv.remove();
+       });
+    });
+});
