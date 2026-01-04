@@ -1,6 +1,7 @@
 const toggleThemeButton = document.querySelector(".toggleTheme");
 const section = document.querySelector("section");
 const columns = document.querySelectorAll(".column");
+let draggingTask = null;
 
 toggleThemeButton.addEventListener("click", () => { 
     section.classList.toggle("dark-theme");
