@@ -181,3 +181,8 @@ section .column {
 .modal-container button:nth-child(3) {
   margin-left: var(--margin-xxl);
 }
+
+.modal-container button:hover {
+  background-color: var(--btn-hover-bg-color);
+  border-radius: var(--border-radius-md);
+}
