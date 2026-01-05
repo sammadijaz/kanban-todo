@@ -186,3 +186,8 @@ section .column {
   background-color: var(--btn-hover-bg-color);
   border-radius: var(--border-radius-md);
 }
+
+.modal-container button:nth-child(2):hover {
+  background-color: var(--del-btn-hover-bg-color);
+  border-radius: var(--border-radius-md);
+}
