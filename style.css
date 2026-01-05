@@ -167,3 +167,13 @@ section .column {
   margin-bottom: var(--margin-md);
   margin-left: var(--margin-lg);
 }
+
+.modal-container button {
+  background-color: var(--btn-bg-color);
+  color: var(--font-color);
+  border: none;
+  padding: var(--padding-md) var(--padding-lg);
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease-in-out;
+}
