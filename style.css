@@ -177,3 +177,7 @@ section .column {
   border-radius: var(--border-radius-sm);
   transition: all 0.3s ease-in-out;
 }
+
+.modal-container button:nth-child(3) {
+  margin-left: var(--margin-xxl);
+}
