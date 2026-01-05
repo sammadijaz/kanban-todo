@@ -28,6 +28,14 @@
   --gap-lg: 15px;
   --gap-xl: 20px;
   --gap-xxl: 25px;
+
+  /* margin */
+  --margin-sm: 5px;
+  --margin-md: 10px;
+  --margin-lg: 15px;
+  --margin-xl: 20px;
+  --margin-xxl: 25px;
+
 }
 
 * {
