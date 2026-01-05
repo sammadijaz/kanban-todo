@@ -192,3 +192,9 @@ section .column {
   background-color: var(--del-btn-hover-bg-color);
   border-radius: var(--border-radius-md);
 }
+
+.modal-container {
+  background-color: var(--dlg-box-bg-color);
+  padding: var(--padding-xl);
+  border-radius: var(--border-radius-md);
+}
