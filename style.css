@@ -163,3 +163,7 @@ section .column {
   justify-content: center;
 }
 
+.modal-container h2 {
+  margin-bottom: var(--margin-md);
+  margin-left: var(--margin-lg);
+}
