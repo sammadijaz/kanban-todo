@@ -236,3 +236,13 @@ form textarea {
   min-height: 120px;
   min-width: 300px;
 }
+
+.form-buttons button {
+  font-size: 1rem;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-xl);
+}
