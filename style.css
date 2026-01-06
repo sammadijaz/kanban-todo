@@ -200,7 +200,7 @@ section .column {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .add-new-task{
