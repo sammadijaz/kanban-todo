@@ -8,6 +8,7 @@ const delModal = document.querySelector(".del-modal");
 const sureDelBtn = document.querySelector(".sure-del");
 const sureBackBtn = document.querySelector(".sure-back");
 const addTaskBtn = document.querySelector(".addTask");
+const todoColumn = document.querySelector("#todo-col");
 let draggingTask = null;
 
 // Function to set the current task being dragged or clicked
