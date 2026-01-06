@@ -81,3 +81,8 @@ delBtns.forEach((btn) => {
 });
 
 // Add Task Functionality
+newTaskForm.addEventListener("submit", (inputText) => {
+    inputText.preventDefault();
+    const titleValue = titleInput.value;
+    const descValue = descInput.value;
+});
