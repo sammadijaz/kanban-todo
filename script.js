@@ -10,7 +10,7 @@ const sureBackBtn = document.querySelector(".sure-back");
 const addTaskBtn = document.querySelector(".addTask");
 let draggingTask = null;
 
-
+// Function to set the current task being dragged or clicked
 const currentTask = (event) => {
     tasks.forEach((task) => {
     task.addEventListener(`${event}`, () => {
