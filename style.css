@@ -222,3 +222,11 @@ form {
   flex-direction: column;
   gap: var(--gap-lg);
 }
+
+form input, form textarea {
+  padding: var(--padding-md);
+  border-radius: var(--border-radius-sm);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
