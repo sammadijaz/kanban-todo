@@ -54,7 +54,7 @@ columns.forEach(column => {
 });
 
 
-
+// Delete Task Functionality
 delBtns.forEach((btn) => {
 
     currentTask("click");
