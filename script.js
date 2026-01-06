@@ -14,6 +14,7 @@ const titleInput = document.querySelector('.task-title');
 const descInput = document.querySelector('.task-desc');
 let draggingTask = null;
 
+
 // Function to set the current task being dragged or clicked
 const currentTask = (event) => {
     tasks.forEach((task) => {
@@ -25,6 +26,8 @@ const currentTask = (event) => {
  
 currentTask("drag");
 
+
+// Toggle Dark/Light Theme Functionality
 toggleThemeButton.addEventListener("click", () => { 
     section.classList.toggle("dark-theme");
     if(section.classList.contains("dark-theme")) {
@@ -34,6 +37,8 @@ toggleThemeButton.addEventListener("click", () => {
     };
 })
 
+
+// Drag and Drop Functionality
 columns.forEach(column => {
     column.addEventListener("dragenter", (e) => {
         e.preventDefault();
@@ -79,6 +84,7 @@ delBtns.forEach((btn) => {
         delModal.classList.add("hidden");
     });
 });
+
 
 // Add Task Functionality
 newTaskForm.addEventListener("submit", (inputText) => {
