@@ -230,3 +230,9 @@ form input, form textarea {
   outline: none;
   font-size: 1rem;
 }
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+  min-width: 300px;
+}
