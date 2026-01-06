@@ -57,4 +57,13 @@ delBtns.forEach((btn) => {
         delModal.classList.add("hidden")
        })
     });
+
+    sureDelBtn.addEventListener("click", () => {
+        draggingTask.remove();
+        delModal.classList.add("hidden");
+    });
+    
+    sureBackBtn.addEventListener("click", () => {
+        delModal.classList.add("hidden");
+    });
 });
