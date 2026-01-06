@@ -10,11 +10,15 @@ const sureBackBtn = document.querySelector(".sure-back");
 let draggingTask = null;
 
 
-tasks.forEach((task) => {
-    task.addEventListener("drag", () => {
+const currentTask = (event) => {
+    tasks.forEach((task) => {
+    task.addEventListener(`${event}`, () => {
         draggingTask = task;
     });
-});
+    });
+};
+ 
+currentTask("drag");
 
 toggleThemeButton.addEventListener("click", () => { 
     section.classList.toggle("dark-theme");
@@ -51,7 +55,7 @@ columns.forEach(column => {
 
 
 delBtns.forEach((btn) => {
-    
+
     tasks.forEach((task) => {
          task.addEventListener("click", () => {
         draggingTask = task;
