@@ -9,7 +9,7 @@ const sureDelBtn = document.querySelector(".sure-del");
 const sureBackBtn = document.querySelector(".sure-back");
 const addTaskBtn = document.querySelector(".addTask");
 const todoColumn = document.querySelector("#todo-col");
-const newTaskForm = document.querySelector('.add-new-task form');
+const newTaskForm = document.querySelector('.add-new-task');
 const titleInput = document.querySelector('.task-title');
 const descInput = document.querySelector('.task-desc');
 let draggingTask = null;
@@ -85,4 +85,18 @@ newTaskForm.addEventListener("submit", (inputText) => {
     inputText.preventDefault();
     const titleValue = titleInput.value;
     const descValue = descInput.value;
+
+    const newTaskDiv = document.createElement("div");
+
+    newTaskDiv.innerHTML = `
+    <div class="task" draggable="true">
+        <h2>${titleValue}</h2>
+        <p>${descValue}</p>
+        <button class="del-btn">Delete</button>
+    </div>
+    `
+    todoColumn.appendChild(newTaskDiv);
+
+    newTaskForm.classList.add("hidden")
+
 });
