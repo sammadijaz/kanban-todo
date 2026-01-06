@@ -93,6 +93,11 @@ addTaskBtn.addEventListener("click", () => {
     newTaskForm.classList.remove("hidden")
 })
 
+cancelBtn.addEventListener("click", () => {
+        newTaskForm.classList.add("hidden");
+    });
+
+
 newTaskForm.addEventListener("submit", (inputText) => {
     inputText.preventDefault();
     const titleValue = titleInput.value;
