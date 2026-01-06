@@ -216,3 +216,9 @@ section .column {
   justify-content: center;
   text-align: center;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
