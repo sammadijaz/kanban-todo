@@ -51,6 +51,13 @@ columns.forEach(column => {
 
 
 delBtns.forEach((btn) => {
+    
+    tasks.forEach((task) => {
+         task.addEventListener("click", () => {
+        draggingTask = task;
+        });
+    });
+
     btn.addEventListener("click", (e) => {
        delModal.classList.remove("hidden")
        delModal.addEventListener("click", () => {
