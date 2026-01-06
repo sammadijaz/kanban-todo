@@ -76,3 +76,5 @@ delBtns.forEach((btn) => {
         delModal.classList.add("hidden");
     });
 });
+
+// Add Task Functionality
