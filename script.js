@@ -7,6 +7,7 @@ const main = document.querySelector("main");
 const delModal = document.querySelector(".del-modal");
 const sureDelBtn = document.querySelector(".sure-del");
 const sureBackBtn = document.querySelector(".sure-back");
+const addTaskBtn = document.querySelector(".addTask");
 let draggingTask = null;
 
 
