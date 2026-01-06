@@ -88,6 +88,11 @@ delBtns.forEach((btn) => {
 
 
 // Add Task Functionality
+
+addTaskBtn.addEventListener("click", () => {
+    newTaskForm.classList.remove("hidden")
+})
+
 newTaskForm.addEventListener("submit", (inputText) => {
     inputText.preventDefault();
     const titleValue = titleInput.value;
