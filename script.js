@@ -12,6 +12,7 @@ const todoColumn = document.querySelector("#todo-col");
 const newTaskForm = document.querySelector('.add-new-task');
 const titleInput = document.querySelector('.task-title');
 const descInput = document.querySelector('.task-desc');
+const cancelBtn = document.querySelector('.close-modal-btn');
 let draggingTask = null;
 
 
