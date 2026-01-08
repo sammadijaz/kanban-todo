@@ -16,6 +16,17 @@ const cancelBtn = document.querySelector('.close-modal-btn');
 let draggingTask = null;
 let taskToDelete = null;
 
+function updateCounters() {
+    columns.forEach((column) => {
+        const counter = column.querySelector(".counter");
+
+        const count = column.querySelectorAll(':scope > .task').length
+
+        if (counter) counter.textContent = `${column.querySelectorAll(':scope > .task').length ? count : ""}`
+    });
+}
+
+
 function addTaskHandlers(task) {
   task.setAttribute('draggable', 'true');
 
@@ -44,6 +55,7 @@ function addTaskHandlers(task) {
 
 // Initialize handlers for existing tasks
 document.querySelectorAll('.task').forEach(addTaskHandlers);
+updateCounters();
 
 // Toggle Theme
 toggleThemeButton.addEventListener("click", () => {
@@ -74,6 +86,7 @@ columns.forEach(column => {
     }
     column.classList.remove("hover-on");
     draggingTask = null;
+    updateCounters();
   });
 });
 
@@ -85,6 +98,7 @@ delModal.addEventListener('click', (e) => {
 sureDelBtn.addEventListener("click", () => {
   if (taskToDelete) {
     taskToDelete.remove();
+    updateCounters();
     taskToDelete = null;
   }
   delModal.classList.add("hidden");
@@ -121,6 +135,7 @@ newTaskForm.addEventListener("submit", (ev) => {
 
   todoColumn.appendChild(task);
   addTaskHandlers(task);
+  updateCounters();
 
   // reset form and close modal
   newTaskForm.reset();
